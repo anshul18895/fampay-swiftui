@@ -3,19 +3,70 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D0E79B623D9801B00E63FE5 /* FPAttributedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0E79B523D9801B00E63FE5 /* FPAttributedText.swift */; };
+		3D0E79B823D980F700E63FE5 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0E79B723D980F700E63FE5 /* Extension.swift */; };
+		3D1133DA23D8CA7400874E19 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1133D623D8CA7400874E19 /* APIManager.swift */; };
+		3D1133DB23D8CA7400874E19 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1133D723D8CA7400874E19 /* APIRouter.swift */; };
+		3D1133DC23D8CA7400874E19 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1133D823D8CA7400874E19 /* Environment.swift */; };
+		3D1133DD23D8CA7400874E19 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1133D923D8CA7400874E19 /* Reachability.swift */; };
+		3D1EA85923D9307D00BDE3E0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1EA85823D9307D00BDE3E0 /* HomeView.swift */; };
+		3D4606A923D81A4A00E7F8E1 /* FPUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4606A823D81A4A00E7F8E1 /* FPUtility.swift */; };
+		3D4606B823D81BB100E7F8E1 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D4606AC23D81BB100E7F8E1 /* Roboto-Black.ttf */; };
+		3D4606B923D81BB100E7F8E1 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D4606AD23D81BB100E7F8E1 /* Roboto-BlackItalic.ttf */; };
+		3D4606BA23D81BB100E7F8E1 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D4606AE23D81BB100E7F8E1 /* Roboto-Bold.ttf */; };
+		3D4606BB23D81BB100E7F8E1 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D4606AF23D81BB100E7F8E1 /* Roboto-BoldItalic.ttf */; };
+		3D4606BC23D81BB100E7F8E1 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D4606B023D81BB100E7F8E1 /* Roboto-Italic.ttf */; };
+		3D4606BD23D81BB100E7F8E1 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D4606B123D81BB100E7F8E1 /* Roboto-Light.ttf */; };
+		3D4606BE23D81BB100E7F8E1 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D4606B223D81BB100E7F8E1 /* Roboto-LightItalic.ttf */; };
+		3D4606BF23D81BB100E7F8E1 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D4606B323D81BB100E7F8E1 /* Roboto-Medium.ttf */; };
+		3D4606C023D81BB100E7F8E1 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D4606B423D81BB100E7F8E1 /* Roboto-MediumItalic.ttf */; };
+		3D4606C123D81BB100E7F8E1 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D4606B523D81BB100E7F8E1 /* Roboto-Regular.ttf */; };
+		3D4606C223D81BB100E7F8E1 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D4606B623D81BB100E7F8E1 /* Roboto-Thin.ttf */; };
+		3D4606C323D81BB100E7F8E1 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D4606B723D81BB100E7F8E1 /* Roboto-ThinItalic.ttf */; };
+		3D4606C523D820E100E7F8E1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4606C423D820E100E7F8E1 /* Model.swift */; };
+		3D4606C723D839CC00E7F8E1 /* FPGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4606C623D839CC00E7F8E1 /* FPGradient.swift */; };
+		3D4606C923D83A3500E7F8E1 /* FPImageDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4606C823D83A3400E7F8E1 /* FPImageDownload.swift */; };
+		3D4606CB23D83A8100E7F8E1 /* FPColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4606CA23D83A8100E7F8E1 /* FPColor.swift */; };
+		3D48056C23D8CED100D74155 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D48056B23D8CED100D74155 /* Constants.swift */; };
 		3DDD47FF23D8059600D0F0EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD47FE23D8059600D0F0EF /* AppDelegate.swift */; };
 		3DDD480123D8059600D0F0EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD480023D8059600D0F0EF /* SceneDelegate.swift */; };
 		3DDD480323D8059600D0F0EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD480223D8059600D0F0EF /* ContentView.swift */; };
 		3DDD480523D8059800D0F0EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DDD480423D8059800D0F0EF /* Assets.xcassets */; };
 		3DDD480823D8059800D0F0EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DDD480723D8059800D0F0EF /* Preview Assets.xcassets */; };
 		3DDD480B23D8059800D0F0EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DDD480923D8059800D0F0EF /* LaunchScreen.storyboard */; };
+		F47059F0B6A3FD163D3AD1B2 /* Pods_Fampay_swiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C3915800FEC8691F399785 /* Pods_Fampay_swiftUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D0E79B523D9801B00E63FE5 /* FPAttributedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPAttributedText.swift; sourceTree = "<group>"; };
+		3D0E79B723D980F700E63FE5 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		3D1133D623D8CA7400874E19 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		3D1133D723D8CA7400874E19 /* APIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		3D1133D823D8CA7400874E19 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		3D1133D923D8CA7400874E19 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		3D1EA85823D9307D00BDE3E0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3D4606A823D81A4A00E7F8E1 /* FPUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPUtility.swift; sourceTree = "<group>"; };
+		3D4606AC23D81BB100E7F8E1 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		3D4606AD23D81BB100E7F8E1 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		3D4606AE23D81BB100E7F8E1 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		3D4606AF23D81BB100E7F8E1 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		3D4606B023D81BB100E7F8E1 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		3D4606B123D81BB100E7F8E1 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		3D4606B223D81BB100E7F8E1 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		3D4606B323D81BB100E7F8E1 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		3D4606B423D81BB100E7F8E1 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		3D4606B523D81BB100E7F8E1 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		3D4606B623D81BB100E7F8E1 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		3D4606B723D81BB100E7F8E1 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		3D4606C423D820E100E7F8E1 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		3D4606C623D839CC00E7F8E1 /* FPGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPGradient.swift; sourceTree = "<group>"; };
+		3D4606C823D83A3400E7F8E1 /* FPImageDownload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FPImageDownload.swift; path = "/Volumes/Untitled 2/Fampay-Demo/Fampay-swiftUI/Fampay-swiftUI/FPImageDownload.swift"; sourceTree = "<absolute>"; };
+		3D4606CA23D83A8100E7F8E1 /* FPColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPColor.swift; sourceTree = "<group>"; };
+		3D48056B23D8CED100D74155 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3DDD47FB23D8059600D0F0EF /* Fampay-swiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fampay-swiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DDD47FE23D8059600D0F0EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DDD480023D8059600D0F0EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +75,9 @@
 		3DDD480723D8059800D0F0EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3DDD480A23D8059800D0F0EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DDD480C23D8059800D0F0EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BC1BACDDC01471023C74BF8 /* Pods-Fampay-swiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fampay-swiftUI.release.xcconfig"; path = "Target Support Files/Pods-Fampay-swiftUI/Pods-Fampay-swiftUI.release.xcconfig"; sourceTree = "<group>"; };
+		64C3915800FEC8691F399785 /* Pods_Fampay_swiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fampay_swiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C372112EDEC158B984DD492A /* Pods-Fampay-swiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fampay-swiftUI.debug.xcconfig"; path = "Target Support Files/Pods-Fampay-swiftUI/Pods-Fampay-swiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +85,87 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F47059F0B6A3FD163D3AD1B2 /* Pods_Fampay_swiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D1133D323D8CA1A00874E19 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				3D1133D523D8CA7400874E19 /* API */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		3D1133D523D8CA7400874E19 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3D1133D623D8CA7400874E19 /* APIManager.swift */,
+				3D1133D723D8CA7400874E19 /* APIRouter.swift */,
+				3D1133D823D8CA7400874E19 /* Environment.swift */,
+				3D1133D923D8CA7400874E19 /* Reachability.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		3D4606AA23D81BB100E7F8E1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3D4606AB23D81BB100E7F8E1 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3D4606AB23D81BB100E7F8E1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3D4606AC23D81BB100E7F8E1 /* Roboto-Black.ttf */,
+				3D4606AD23D81BB100E7F8E1 /* Roboto-BlackItalic.ttf */,
+				3D4606AE23D81BB100E7F8E1 /* Roboto-Bold.ttf */,
+				3D4606AF23D81BB100E7F8E1 /* Roboto-BoldItalic.ttf */,
+				3D4606B023D81BB100E7F8E1 /* Roboto-Italic.ttf */,
+				3D4606B123D81BB100E7F8E1 /* Roboto-Light.ttf */,
+				3D4606B223D81BB100E7F8E1 /* Roboto-LightItalic.ttf */,
+				3D4606B323D81BB100E7F8E1 /* Roboto-Medium.ttf */,
+				3D4606B423D81BB100E7F8E1 /* Roboto-MediumItalic.ttf */,
+				3D4606B523D81BB100E7F8E1 /* Roboto-Regular.ttf */,
+				3D4606B623D81BB100E7F8E1 /* Roboto-Thin.ttf */,
+				3D4606B723D81BB100E7F8E1 /* Roboto-ThinItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		3D4606CC23D83AAE00E7F8E1 /* FPSwiftUIExtenstions */ = {
+			isa = PBXGroup;
+			children = (
+				3D4606C623D839CC00E7F8E1 /* FPGradient.swift */,
+				3D4606C823D83A3400E7F8E1 /* FPImageDownload.swift */,
+				3D4606CA23D83A8100E7F8E1 /* FPColor.swift */,
+				3D0E79B523D9801B00E63FE5 /* FPAttributedText.swift */,
+			);
+			path = FPSwiftUIExtenstions;
+			sourceTree = "<group>";
+		};
+		3D48056A23D8CEA000D74155 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				3D4606A823D81A4A00E7F8E1 /* FPUtility.swift */,
+				3D48056B23D8CED100D74155 /* Constants.swift */,
+				3D0E79B723D980F700E63FE5 /* Extension.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		3DDD47F223D8059600D0F0EF = {
 			isa = PBXGroup;
 			children = (
 				3DDD47FD23D8059600D0F0EF /* Fampay-swiftUI */,
 				3DDD47FC23D8059600D0F0EF /* Products */,
+				A985F9076AC30855619EEBBF /* Pods */,
+				ED766EA76A65211FFFF1DA04 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +182,14 @@
 			children = (
 				3DDD47FE23D8059600D0F0EF /* AppDelegate.swift */,
 				3DDD480023D8059600D0F0EF /* SceneDelegate.swift */,
+				3D1EA85823D9307D00BDE3E0 /* HomeView.swift */,
 				3DDD480223D8059600D0F0EF /* ContentView.swift */,
+				3D4606C423D820E100E7F8E1 /* Model.swift */,
+				3D48056A23D8CEA000D74155 /* Utility */,
+				3D1133D323D8CA1A00874E19 /* Networking */,
+				3D4606CC23D83AAE00E7F8E1 /* FPSwiftUIExtenstions */,
 				3DDD480423D8059800D0F0EF /* Assets.xcassets */,
+				3D4606AA23D81BB100E7F8E1 /* Resources */,
 				3DDD480923D8059800D0F0EF /* LaunchScreen.storyboard */,
 				3DDD480C23D8059800D0F0EF /* Info.plist */,
 				3DDD480623D8059800D0F0EF /* Preview Content */,
@@ -75,6 +205,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		A985F9076AC30855619EEBBF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C372112EDEC158B984DD492A /* Pods-Fampay-swiftUI.debug.xcconfig */,
+				4BC1BACDDC01471023C74BF8 /* Pods-Fampay-swiftUI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		ED766EA76A65211FFFF1DA04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64C3915800FEC8691F399785 /* Pods_Fampay_swiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +229,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DDD480F23D8059800D0F0EF /* Build configuration list for PBXNativeTarget "Fampay-swiftUI" */;
 			buildPhases = (
+				C23B452E4ED17E7C20D67507 /* [CP] Check Pods Manifest.lock */,
 				3DDD47F723D8059600D0F0EF /* Sources */,
 				3DDD47F823D8059600D0F0EF /* Frameworks */,
 				3DDD47F923D8059600D0F0EF /* Resources */,
+				63828BAB7769AF238D24EEFE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,22 +282,89 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D4606C323D81BB100E7F8E1 /* Roboto-ThinItalic.ttf in Resources */,
+				3D4606C223D81BB100E7F8E1 /* Roboto-Thin.ttf in Resources */,
 				3DDD480B23D8059800D0F0EF /* LaunchScreen.storyboard in Resources */,
 				3DDD480823D8059800D0F0EF /* Preview Assets.xcassets in Resources */,
+				3D4606BE23D81BB100E7F8E1 /* Roboto-LightItalic.ttf in Resources */,
+				3D4606BA23D81BB100E7F8E1 /* Roboto-Bold.ttf in Resources */,
+				3D4606C023D81BB100E7F8E1 /* Roboto-MediumItalic.ttf in Resources */,
+				3D4606B923D81BB100E7F8E1 /* Roboto-BlackItalic.ttf in Resources */,
 				3DDD480523D8059800D0F0EF /* Assets.xcassets in Resources */,
+				3D4606BC23D81BB100E7F8E1 /* Roboto-Italic.ttf in Resources */,
+				3D4606BB23D81BB100E7F8E1 /* Roboto-BoldItalic.ttf in Resources */,
+				3D4606BF23D81BB100E7F8E1 /* Roboto-Medium.ttf in Resources */,
+				3D4606C123D81BB100E7F8E1 /* Roboto-Regular.ttf in Resources */,
+				3D4606B823D81BB100E7F8E1 /* Roboto-Black.ttf in Resources */,
+				3D4606BD23D81BB100E7F8E1 /* Roboto-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		63828BAB7769AF238D24EEFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fampay-swiftUI/Pods-Fampay-swiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fampay-swiftUI/Pods-Fampay-swiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fampay-swiftUI/Pods-Fampay-swiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C23B452E4ED17E7C20D67507 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fampay-swiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3DDD47F723D8059600D0F0EF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D4606C523D820E100E7F8E1 /* Model.swift in Sources */,
+				3D1133DB23D8CA7400874E19 /* APIRouter.swift in Sources */,
+				3D1133DD23D8CA7400874E19 /* Reachability.swift in Sources */,
+				3D4606C723D839CC00E7F8E1 /* FPGradient.swift in Sources */,
+				3D4606A923D81A4A00E7F8E1 /* FPUtility.swift in Sources */,
+				3D0E79B823D980F700E63FE5 /* Extension.swift in Sources */,
+				3D1133DA23D8CA7400874E19 /* APIManager.swift in Sources */,
 				3DDD47FF23D8059600D0F0EF /* AppDelegate.swift in Sources */,
+				3D48056C23D8CED100D74155 /* Constants.swift in Sources */,
 				3DDD480123D8059600D0F0EF /* SceneDelegate.swift in Sources */,
+				3D1EA85923D9307D00BDE3E0 /* HomeView.swift in Sources */,
+				3D0E79B623D9801B00E63FE5 /* FPAttributedText.swift in Sources */,
+				3D1133DC23D8CA7400874E19 /* Environment.swift in Sources */,
+				3D4606CB23D83A8100E7F8E1 /* FPColor.swift in Sources */,
 				3DDD480323D8059600D0F0EF /* ContentView.swift in Sources */,
+				3D4606C923D83A3500E7F8E1 /* FPImageDownload.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +498,7 @@
 		};
 		3DDD481023D8059800D0F0EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C372112EDEC158B984DD492A /* Pods-Fampay-swiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +519,7 @@
 		};
 		3DDD481123D8059800D0F0EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BC1BACDDC01471023C74BF8 /* Pods-Fampay-swiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
