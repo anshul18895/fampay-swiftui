@@ -14,6 +14,7 @@
 		3D1133DC23D8CA7400874E19 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1133D823D8CA7400874E19 /* Environment.swift */; };
 		3D1133DD23D8CA7400874E19 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1133D923D8CA7400874E19 /* Reachability.swift */; };
 		3D1EA85923D9307D00BDE3E0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1EA85823D9307D00BDE3E0 /* HomeView.swift */; };
+		3D26B89223DA005500430245 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D26B89123DA005500430245 /* HomeViewModel.swift */; };
 		3D4606A923D81A4A00E7F8E1 /* FPUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4606A823D81A4A00E7F8E1 /* FPUtility.swift */; };
 		3D4606B823D81BB100E7F8E1 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D4606AC23D81BB100E7F8E1 /* Roboto-Black.ttf */; };
 		3D4606B923D81BB100E7F8E1 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D4606AD23D81BB100E7F8E1 /* Roboto-BlackItalic.ttf */; };
@@ -38,7 +39,7 @@
 		3DD5CF4623D9BA0B004C9323 /* HC5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5CF4523D9BA0B004C9323 /* HC5View.swift */; };
 		3DD5CF4823D9BB04004C9323 /* HC1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5CF4723D9BB04004C9323 /* HC1View.swift */; };
 		3DD5CF4A23D9CED7004C9323 /* AppDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5CF4923D9CED7004C9323 /* AppDependency.swift */; };
-		3DD5CF4C23D9D068004C9323 /* AppCordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5CF4B23D9D068004C9323 /* AppCordinator.swift */; };
+		3DD5CF4C23D9D068004C9323 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5CF4B23D9D068004C9323 /* AppCoordinator.swift */; };
 		3DDD47FF23D8059600D0F0EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD47FE23D8059600D0F0EF /* AppDelegate.swift */; };
 		3DDD480123D8059600D0F0EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD480023D8059600D0F0EF /* SceneDelegate.swift */; };
 		3DDD480523D8059800D0F0EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DDD480423D8059800D0F0EF /* Assets.xcassets */; };
@@ -55,6 +56,7 @@
 		3D1133D823D8CA7400874E19 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		3D1133D923D8CA7400874E19 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		3D1EA85823D9307D00BDE3E0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3D26B89123DA005500430245 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		3D4606A823D81A4A00E7F8E1 /* FPUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPUtility.swift; sourceTree = "<group>"; };
 		3D4606AC23D81BB100E7F8E1 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		3D4606AD23D81BB100E7F8E1 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -79,7 +81,7 @@
 		3DD5CF4523D9BA0B004C9323 /* HC5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HC5View.swift; sourceTree = "<group>"; };
 		3DD5CF4723D9BB04004C9323 /* HC1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HC1View.swift; sourceTree = "<group>"; };
 		3DD5CF4923D9CED7004C9323 /* AppDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependency.swift; sourceTree = "<group>"; };
-		3DD5CF4B23D9D068004C9323 /* AppCordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCordinator.swift; sourceTree = "<group>"; };
+		3DD5CF4B23D9D068004C9323 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		3DDD47FB23D8059600D0F0EF /* Fampay-swiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fampay-swiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DDD47FE23D8059600D0F0EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DDD480023D8059600D0F0EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +123,48 @@
 				3D1133D923D8CA7400874E19 /* Reachability.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		3D26B89023D9FE6700430245 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D1EA85823D9307D00BDE3E0 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D26B89323DA008D00430245 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3D26B89123DA005500430245 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3D26B89423DA010900430245 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D4606C423D820E100E7F8E1 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D26B89523DA014000430245 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				3DD5CF4B23D9D068004C9323 /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		3D26B89623DA016D00430245 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				3DDD47FE23D8059600D0F0EF /* AppDelegate.swift */,
+				3DD5CF4923D9CED7004C9323 /* AppDependency.swift */,
+				3DDD480023D8059600D0F0EF /* SceneDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 		3D4606AA23D81BB100E7F8E1 /* Resources */ = {
@@ -204,13 +248,12 @@
 		3DDD47FD23D8059600D0F0EF /* Fampay-swiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				3DDD47FE23D8059600D0F0EF /* AppDelegate.swift */,
-				3DD5CF4923D9CED7004C9323 /* AppDependency.swift */,
-				3DD5CF4B23D9D068004C9323 /* AppCordinator.swift */,
-				3DDD480023D8059600D0F0EF /* SceneDelegate.swift */,
+				3D26B89623DA016D00430245 /* Application */,
+				3D26B89523DA014000430245 /* Coordinator */,
 				3DD5CF3E23D9B962004C9323 /* HCViews */,
-				3D1EA85823D9307D00BDE3E0 /* HomeView.swift */,
-				3D4606C423D820E100E7F8E1 /* Model.swift */,
+				3D26B89023D9FE6700430245 /* View */,
+				3D26B89423DA010900430245 /* Model */,
+				3D26B89323DA008D00430245 /* ViewModel */,
 				3D48056A23D8CEA000D74155 /* Utility */,
 				3D1133D323D8CA1A00874E19 /* Networking */,
 				3D4606CC23D83AAE00E7F8E1 /* FPSwiftUIExtenstions */,
@@ -380,6 +423,7 @@
 				3D1133DB23D8CA7400874E19 /* APIRouter.swift in Sources */,
 				3D1133DD23D8CA7400874E19 /* Reachability.swift in Sources */,
 				3DD5CF4023D9B989004C9323 /* HC6View.swift in Sources */,
+				3D26B89223DA005500430245 /* HomeViewModel.swift in Sources */,
 				3D4606C723D839CC00E7F8E1 /* FPGradient.swift in Sources */,
 				3DD5CF4A23D9CED7004C9323 /* AppDependency.swift in Sources */,
 				3D4606A923D81A4A00E7F8E1 /* FPUtility.swift in Sources */,
@@ -395,7 +439,7 @@
 				3D0E79B623D9801B00E63FE5 /* FPAttributedText.swift in Sources */,
 				3D1133DC23D8CA7400874E19 /* Environment.swift in Sources */,
 				3D4606CB23D83A8100E7F8E1 /* FPColor.swift in Sources */,
-				3DD5CF4C23D9D068004C9323 /* AppCordinator.swift in Sources */,
+				3DD5CF4C23D9D068004C9323 /* AppCoordinator.swift in Sources */,
 				3D4606C923D83A3500E7F8E1 /* FPImageDownload.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
