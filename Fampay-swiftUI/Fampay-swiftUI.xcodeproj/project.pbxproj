@@ -32,9 +32,15 @@
 		3D4606C923D83A3500E7F8E1 /* FPImageDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4606C823D83A3400E7F8E1 /* FPImageDownload.swift */; };
 		3D4606CB23D83A8100E7F8E1 /* FPColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4606CA23D83A8100E7F8E1 /* FPColor.swift */; };
 		3D48056C23D8CED100D74155 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D48056B23D8CED100D74155 /* Constants.swift */; };
+		3DD5CF4023D9B989004C9323 /* HC6View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5CF3F23D9B989004C9323 /* HC6View.swift */; };
+		3DD5CF4223D9B9BD004C9323 /* HC3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5CF4123D9B9BD004C9323 /* HC3View.swift */; };
+		3DD5CF4423D9B9E4004C9323 /* HC4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5CF4323D9B9E4004C9323 /* HC4View.swift */; };
+		3DD5CF4623D9BA0B004C9323 /* HC5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5CF4523D9BA0B004C9323 /* HC5View.swift */; };
+		3DD5CF4823D9BB04004C9323 /* HC1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5CF4723D9BB04004C9323 /* HC1View.swift */; };
+		3DD5CF4A23D9CED7004C9323 /* AppDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5CF4923D9CED7004C9323 /* AppDependency.swift */; };
+		3DD5CF4C23D9D068004C9323 /* AppCordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5CF4B23D9D068004C9323 /* AppCordinator.swift */; };
 		3DDD47FF23D8059600D0F0EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD47FE23D8059600D0F0EF /* AppDelegate.swift */; };
 		3DDD480123D8059600D0F0EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD480023D8059600D0F0EF /* SceneDelegate.swift */; };
-		3DDD480323D8059600D0F0EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD480223D8059600D0F0EF /* ContentView.swift */; };
 		3DDD480523D8059800D0F0EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DDD480423D8059800D0F0EF /* Assets.xcassets */; };
 		3DDD480823D8059800D0F0EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DDD480723D8059800D0F0EF /* Preview Assets.xcassets */; };
 		3DDD480B23D8059800D0F0EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DDD480923D8059800D0F0EF /* LaunchScreen.storyboard */; };
@@ -67,10 +73,16 @@
 		3D4606C823D83A3400E7F8E1 /* FPImageDownload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FPImageDownload.swift; path = "/Volumes/Untitled 2/Fampay-Demo/Fampay-swiftUI/Fampay-swiftUI/FPImageDownload.swift"; sourceTree = "<absolute>"; };
 		3D4606CA23D83A8100E7F8E1 /* FPColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPColor.swift; sourceTree = "<group>"; };
 		3D48056B23D8CED100D74155 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3DD5CF3F23D9B989004C9323 /* HC6View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HC6View.swift; sourceTree = "<group>"; };
+		3DD5CF4123D9B9BD004C9323 /* HC3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HC3View.swift; sourceTree = "<group>"; };
+		3DD5CF4323D9B9E4004C9323 /* HC4View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HC4View.swift; sourceTree = "<group>"; };
+		3DD5CF4523D9BA0B004C9323 /* HC5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HC5View.swift; sourceTree = "<group>"; };
+		3DD5CF4723D9BB04004C9323 /* HC1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HC1View.swift; sourceTree = "<group>"; };
+		3DD5CF4923D9CED7004C9323 /* AppDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependency.swift; sourceTree = "<group>"; };
+		3DD5CF4B23D9D068004C9323 /* AppCordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCordinator.swift; sourceTree = "<group>"; };
 		3DDD47FB23D8059600D0F0EF /* Fampay-swiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fampay-swiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DDD47FE23D8059600D0F0EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DDD480023D8059600D0F0EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3DDD480223D8059600D0F0EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3DDD480423D8059800D0F0EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DDD480723D8059800D0F0EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3DDD480A23D8059800D0F0EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -159,6 +171,18 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		3DD5CF3E23D9B962004C9323 /* HCViews */ = {
+			isa = PBXGroup;
+			children = (
+				3DD5CF3F23D9B989004C9323 /* HC6View.swift */,
+				3DD5CF4123D9B9BD004C9323 /* HC3View.swift */,
+				3DD5CF4323D9B9E4004C9323 /* HC4View.swift */,
+				3DD5CF4523D9BA0B004C9323 /* HC5View.swift */,
+				3DD5CF4723D9BB04004C9323 /* HC1View.swift */,
+			);
+			path = HCViews;
+			sourceTree = "<group>";
+		};
 		3DDD47F223D8059600D0F0EF = {
 			isa = PBXGroup;
 			children = (
@@ -181,9 +205,11 @@
 			isa = PBXGroup;
 			children = (
 				3DDD47FE23D8059600D0F0EF /* AppDelegate.swift */,
+				3DD5CF4923D9CED7004C9323 /* AppDependency.swift */,
+				3DD5CF4B23D9D068004C9323 /* AppCordinator.swift */,
 				3DDD480023D8059600D0F0EF /* SceneDelegate.swift */,
+				3DD5CF3E23D9B962004C9323 /* HCViews */,
 				3D1EA85823D9307D00BDE3E0 /* HomeView.swift */,
-				3DDD480223D8059600D0F0EF /* ContentView.swift */,
 				3D4606C423D820E100E7F8E1 /* Model.swift */,
 				3D48056A23D8CEA000D74155 /* Utility */,
 				3D1133D323D8CA1A00874E19 /* Networking */,
@@ -349,21 +375,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DD5CF4423D9B9E4004C9323 /* HC4View.swift in Sources */,
 				3D4606C523D820E100E7F8E1 /* Model.swift in Sources */,
 				3D1133DB23D8CA7400874E19 /* APIRouter.swift in Sources */,
 				3D1133DD23D8CA7400874E19 /* Reachability.swift in Sources */,
+				3DD5CF4023D9B989004C9323 /* HC6View.swift in Sources */,
 				3D4606C723D839CC00E7F8E1 /* FPGradient.swift in Sources */,
+				3DD5CF4A23D9CED7004C9323 /* AppDependency.swift in Sources */,
 				3D4606A923D81A4A00E7F8E1 /* FPUtility.swift in Sources */,
+				3DD5CF4623D9BA0B004C9323 /* HC5View.swift in Sources */,
 				3D0E79B823D980F700E63FE5 /* Extension.swift in Sources */,
 				3D1133DA23D8CA7400874E19 /* APIManager.swift in Sources */,
 				3DDD47FF23D8059600D0F0EF /* AppDelegate.swift in Sources */,
+				3DD5CF4823D9BB04004C9323 /* HC1View.swift in Sources */,
+				3DD5CF4223D9B9BD004C9323 /* HC3View.swift in Sources */,
 				3D48056C23D8CED100D74155 /* Constants.swift in Sources */,
 				3DDD480123D8059600D0F0EF /* SceneDelegate.swift in Sources */,
 				3D1EA85923D9307D00BDE3E0 /* HomeView.swift in Sources */,
 				3D0E79B623D9801B00E63FE5 /* FPAttributedText.swift in Sources */,
 				3D1133DC23D8CA7400874E19 /* Environment.swift in Sources */,
 				3D4606CB23D83A8100E7F8E1 /* FPColor.swift in Sources */,
-				3DDD480323D8059600D0F0EF /* ContentView.swift in Sources */,
+				3DD5CF4C23D9D068004C9323 /* AppCordinator.swift in Sources */,
 				3D4606C923D83A3500E7F8E1 /* FPImageDownload.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

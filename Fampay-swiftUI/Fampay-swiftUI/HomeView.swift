@@ -15,30 +15,56 @@ import Combine
 struct HomeView: View {
     @ObservedObject var viewModel: HomeViewModel
     var body: some View{
-        NavigationView{
+        VStack{
+            
+            ZStack{
+                FPImage.titleLogo.image().resizable()
+                    .scaledToFill()
+                    .frame(width: 100, height: 25, alignment: .center)
+            }
+            .frame(width: Screen.width, height: 44, alignment: .center)
+            .background(Color.white)
+            
             List{
                 ForEach(viewModel.cards){ (card) in
-                    self.containedView(designType: card.designType ?? .HC1, cardElement: card).background(Color.gray).listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
+                    self.containedView(designType: card.designType ?? .HC1, cardElement: card)
+                        .background(Color(hex: "#F7F6F3"))
+                        .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
                 }
             }
+            .alert(isPresented: $viewModel.isErrorShown, content: { () -> Alert in
+                               Alert(title: Text("Error"), message: Text(viewModel.errorMessage))
+                           })
             .onAppear(perform: { self.viewModel.apply(.onAppear) })
         }
     }
     
     func containedView(designType: DesignType, cardElement: CardElement) -> AnyView {
         switch designType {
-        case .HC3: return AnyView(HC3View(cardElement: cardElement))
-        case .HC6: return AnyView(HC6View(cardElement: cardElement))
-        case .HC5: return AnyView(HC5View(cardElement: cardElement))
-        default: return AnyView(Text(cardElement.name ?? ""))
+        case .HC3: return AnyView(HC3View(cardElement: cardElement,openURL: self.viewModel.openURL))
+        case .HC6: return AnyView(HC6View(cardElement: cardElement,openURL: self.viewModel.openURL))
+        case .HC5: return AnyView(HC5View(cardElement: cardElement,openURL: self.viewModel.openURL))
+        case .HC4: return AnyView(HC4View(cardElement: cardElement,openURL: self.viewModel.openURL))
+        case .HC1: return AnyView(HC1View(cardElement: cardElement,openURL: self.viewModel.openURL))
         }
     }
 }
 
 final class HomeViewModel: ObservableObject{
     
-    private var cancellables: [AnyCancellable] = []
+    typealias Dependencies = HasAPI
+    private var dependecies: Dependencies
     
+    private var cancellables: [AnyCancellable] = []
+
+    //Init
+    init(dependecies: Dependencies){
+        self.dependecies = dependecies
+        self.bindInputs()
+        self.bindOutputs()
+    }
+    
+
     // MARK: Input
     enum Input {
         case onAppear
@@ -49,6 +75,7 @@ final class HomeViewModel: ObservableObject{
         }
     }
     private let onAppearSubject = PassthroughSubject<Void, Never>()
+    let openURL = PassthroughSubject<String, Never>()
     
     // MARK: Output
     @Published private(set) var cards: Cards = []
@@ -58,23 +85,18 @@ final class HomeViewModel: ObservableObject{
     
     private let responseSubject = PassthroughSubject<[CardElement], Never>()
     private let errorSubject = PassthroughSubject<APIError, Never>()
+    
     //    private let trackingSubject = PassthroughSubject<TrackEventType, Never>()
     
     //    private let apiService: APIServiceType
     //    private let trackerService: TrackerType
     //    private let experimentService: ExperimentServiceType
     
-    init() {
-        self.bindInputs()
-        self.bindOutputs()
-    }
-    
-    
     private func bindInputs() {
         
         let responsePublisher = onAppearSubject
-            .flatMap { _ in
-                APIManager.shared.callRequest(.getUIComponent([:]), parseTo: [CardElement].self)
+            .flatMap {  _ in
+                self.dependecies.api.callRequest(.getUIComponent([:]), parseTo: [CardElement].self)
                     .catch { [weak self] error -> Empty<Cards, Never> in
                         self?.errorSubject.send(error)
                         return .init()
@@ -85,8 +107,13 @@ final class HomeViewModel: ObservableObject{
             .share()
             .subscribe(responseSubject)
         
+        let openURLStream: AnyCancellable = self.openURL.sink { (url) in
+            print(url)
+        }
+        
         cancellables += [
-            responseStream
+            responseStream,
+            openURLStream
         ]
     }
     

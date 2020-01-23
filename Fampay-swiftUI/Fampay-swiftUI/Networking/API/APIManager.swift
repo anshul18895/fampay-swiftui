@@ -21,14 +21,9 @@ class APIManager {
     /// Custom header field
     var header  = ["Content-Type":"application/json"]
     
-    static let shared:APIManager = {
-        let instance = APIManager()
-        return instance
-    }()
-    
     let sessionManager:SessionManager
     
-    private init() {
+    init() {
         let configuration = URLSessionConfiguration.default
         configuration.timeoutIntervalForRequest = 600
         configuration.timeoutIntervalForResource = 600    

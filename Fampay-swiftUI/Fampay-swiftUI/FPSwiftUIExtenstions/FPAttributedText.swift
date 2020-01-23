@@ -16,24 +16,25 @@ struct FPAttributedText: View{
     var slicedArray: [String]
     
     var body: some View{
-        ZStack{
-            getArrayOfText().reduce(Text(""), {$0 + $1})
-        }
+        getArrayOfText().reduce(Text(""), { $0 + $1})
     }
     
     func getArrayOfText() -> [Text]{
         var entities = self.formated.entities
         var arrText: [Text] = []
         for i in 0...(self.slicedArray.count - 1){
-                if self.slicedArray[i] == "{}"{
-                    let firstElement = entities?.first
-                    arrText.append(
+            if self.slicedArray[i] == "{}"{
+                let firstElement = entities?.first
+                arrText.append(
                     Text(firstElement?.text ?? "")
-                            .foregroundColor(Color.init(hex: firstElement?.color ?? "#000000"))
-                    )
-                    entities?.removeFirst()
-                }else{
-                    arrText.append(Text(self.slicedArray[i]).foregroundColor(self.initialColor))
+                        .foregroundColor(Color.init(hex: firstElement?.color ?? "#000000"))
+                        .font(self.font)
+                )
+                entities?.removeFirst()
+            }else{
+                arrText.append(Text(self.slicedArray[i])
+                    .foregroundColor(self.initialColor)
+                    .font(self.font))
             }
         }
         return arrText

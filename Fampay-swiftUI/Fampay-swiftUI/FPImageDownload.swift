@@ -14,6 +14,6 @@ struct FPImageDownload: View {
     var body: some View{
         KFImage(URL(
             string: imageUrl
-        )).resizable().aspectRatio(contentMode: .fit).clipped()
+            )).resizable().aspectRatio(contentMode: .fit).clipped()
     }
 }

@@ -30,7 +30,7 @@ enum FPFont: String{
 
 enum FPImage: String{
     case arrow
-    
+    case titleLogo = "fampayTitle"
     func image()->Image{
         return Image(self.rawValue)
     }

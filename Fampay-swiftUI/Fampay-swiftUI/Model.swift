@@ -43,7 +43,8 @@ public enum DesignType: String, Codable, Hashable {
 }
 
 // MARK: - Card
-struct Card: Decodable {
+struct Card: Decodable, Identifiable {
+    var id: String? = UUID().uuidString
     let name, title: String?
     let formattedTitle: Formatted?
     let cardDescription: String?
@@ -55,6 +56,13 @@ struct Card: Decodable {
     let icon: BgImage?
     let bgGradient: BgGradient?
 
+    var isFormatedTitle: Bool{
+        return formattedTitle != nil
+    }
+    var isFormatedDesc: Bool{
+        return formattedDescription != nil
+    }
+    
     enum CodingKeys: String, CodingKey {
         case name, title
         case formattedTitle = "formatted_title"
@@ -69,13 +77,15 @@ struct Card: Decodable {
 }
 
 // MARK: - BgGradient
-struct BgGradient: Decodable {
+struct BgGradient: Decodable, Identifiable {
+    var id: String? = UUID().uuidString
     let angle: Int?
     let colors: [String]?
 }
 
 // MARK: - BgImage
-struct BgImage: Decodable {
+struct BgImage: Decodable, Identifiable {
+    var id: String? = UUID().uuidString
     let imageType: String?
     let imageURL: String?
     let assetType: String?
@@ -88,7 +98,8 @@ struct BgImage: Decodable {
 }
 
 // MARK: - Cta
-struct Cta: Decodable {
+struct Cta: Decodable, Identifiable {
+    var id: String? = UUID().uuidString
     let text, bgColor, textColor: String?
     let url: String?
 
@@ -101,22 +112,24 @@ struct Cta: Decodable {
 }
 
 // MARK: - Formatted
-struct Formatted: Decodable {
+struct Formatted: Decodable, Identifiable {
+    var id: String? = UUID().uuidString
     let text: String?
     let entities: [Entity]?
     
     func getSepratedStrings() -> [String]{
-        self.replacingOccurenceWithIndex()?.components(separatedBy: "[seprator]") ?? []
+        (self.replacingOccurenceWithIndex()?.components(separatedBy: "[seprator]") ?? []).filter({$0 != ""})
     }
     
     private func replacingOccurenceWithIndex() -> String?{
-        text?.replacingOccurrences(of: "{}", with: "[seprator]{}[seprator]")
+        return text?.replacingOccurrences(of: "{}", with: "[seprator]{}[seprator]")
     }
     
 }
 
 // MARK: - Entity
-struct Entity: Decodable {
+struct Entity: Decodable, Identifiable {
+    var id: String? = UUID().uuidString
     let text, type, color: String?
     let url: String?
 }
