@@ -29,7 +29,7 @@ struct HC1View: View {
                     ForEach(cardElement?.cards ?? []){ (card) in
                         HC1ContainerView.init(card: card)
                     }
-                    .frame(minWidth: 0, maxWidth: 300)
+                    .frame(minWidth: 0, maxWidth: Screen.width)
                 }
             }
         }.frame(height: 80)

@@ -1,8 +1,9 @@
 //
-//  FPImageView.swift
-//  
+//  FPImage.swift
+//  Fampay-swiftUI
 //
-//  Created by Anshul on 22/01/20.
+//  Created by Anshul on 24/01/20.
+//  Copyright © 2020 Anshul Shah. All rights reserved.
 //
 
 import Foundation
@@ -17,3 +18,4 @@ struct FPImageDownload: View {
             )).resizable().aspectRatio(contentMode: .fit).clipped()
     }
 }
+

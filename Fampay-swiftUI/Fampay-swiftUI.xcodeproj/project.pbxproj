@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D0BAC4B23DAB97C00F29FBC /* FPImageDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0BAC4A23DAB97B00F29FBC /* FPImageDownload.swift */; };
+		3D0BAC4D23DABC4400F29FBC /* FPImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0BAC4C23DABC4400F29FBC /* FPImage.swift */; };
 		3D0E79B623D9801B00E63FE5 /* FPAttributedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0E79B523D9801B00E63FE5 /* FPAttributedText.swift */; };
 		3D0E79B823D980F700E63FE5 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0E79B723D980F700E63FE5 /* Extension.swift */; };
 		3D1133DA23D8CA7400874E19 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1133D623D8CA7400874E19 /* APIManager.swift */; };
@@ -49,7 +49,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3D0BAC4A23DAB97B00F29FBC /* FPImageDownload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPImageDownload.swift; sourceTree = "<group>"; };
+		3D0BAC4C23DABC4400F29FBC /* FPImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPImage.swift; sourceTree = "<group>"; };
 		3D0E79B523D9801B00E63FE5 /* FPAttributedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPAttributedText.swift; sourceTree = "<group>"; };
 		3D0E79B723D980F700E63FE5 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		3D1133D623D8CA7400874E19 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
@@ -197,8 +197,8 @@
 		3D4606CC23D83AAE00E7F8E1 /* FPSwiftUIExtenstions */ = {
 			isa = PBXGroup;
 			children = (
-				3D0BAC4A23DAB97B00F29FBC /* FPImageDownload.swift */,
 				3D4606C623D839CC00E7F8E1 /* FPGradient.swift */,
+				3D0BAC4C23DABC4400F29FBC /* FPImage.swift */,
 				3D4606CA23D83A8100E7F8E1 /* FPColor.swift */,
 				3D0E79B523D9801B00E63FE5 /* FPAttributedText.swift */,
 			);
@@ -418,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D0BAC4D23DABC4400F29FBC /* FPImage.swift in Sources */,
 				3DD5CF4423D9B9E4004C9323 /* HC4View.swift in Sources */,
 				3D4606C523D820E100E7F8E1 /* Model.swift in Sources */,
 				3D1133DB23D8CA7400874E19 /* APIRouter.swift in Sources */,
@@ -426,7 +427,6 @@
 				3D26B89223DA005500430245 /* HomeViewModel.swift in Sources */,
 				3D4606C723D839CC00E7F8E1 /* FPGradient.swift in Sources */,
 				3DD5CF4A23D9CED7004C9323 /* AppDependency.swift in Sources */,
-				3D0BAC4B23DAB97C00F29FBC /* FPImageDownload.swift in Sources */,
 				3D4606A923D81A4A00E7F8E1 /* FPUtility.swift in Sources */,
 				3DD5CF4623D9BA0B004C9323 /* HC5View.swift in Sources */,
 				3D0E79B823D980F700E63FE5 /* Extension.swift in Sources */,
