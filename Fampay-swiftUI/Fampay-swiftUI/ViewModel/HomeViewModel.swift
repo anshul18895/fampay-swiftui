@@ -27,10 +27,12 @@ final class HomeViewModel: ObservableObject{
     // MARK: Input
     enum Input {
         case onAppear
+        case onOpenURL(url: String)
     }
     func apply(_ input: Input) {
         switch input {
         case .onAppear: onAppearSubject.send(())
+        case .onOpenURL(let url): openURL.send(url)
         }
     }
     private let onAppearSubject = PassthroughSubject<Void, Never>()

@@ -16,7 +16,7 @@ struct HC4View: View {
         return cardElement?.cards?.first
     }
     var openURL: PassthroughSubject<String,Never>?
-    
+    var parentViewModel: HomeViewModel?
     var cardActions: [Cta]{
         return card?.cta ?? []
     }
@@ -40,21 +40,31 @@ struct HC4View: View {
                     
                     ZStack{
                         HStack(alignment: .top, spacing: 20){
-                            Button(action: {
-                                self._openURL(string: self.cardActions.first?.url ?? "")
-                            }){
-                                Text(cardActions.first?.text ?? "")
-                                    .foregroundColor(Color(hex: cardActions.first?.textColor ?? "#000000"))
-                            }.frame(width: 128, height: 42, alignment: .center)
-                                .background(Color(hex: cardActions.last?.bgColor ?? "#FFFFFF").cornerRadius(4))
 
-                            Button(action: {
-                                self._openURL(string: self.cardActions.last?.url ?? "")}
-                            ){
-                                Text(cardActions.last?.text ?? "")
-                                    .foregroundColor(Color(hex: cardActions.last?.textColor ?? "#000000"))
-                            }.frame(width: 128, height: 42, alignment: .center)
-                                .background(Color(hex: cardActions.last?.bgColor ?? "#FFFFFF").cornerRadius(4))
+                            
+                            Button.init("Button1") {
+                                self.parentViewModel?.apply(.onOpenURL(url: "Button 1"))
+                            }
+                            
+                            Button.init("Button2") {
+                                self.parentViewModel?.apply(.onOpenURL(url: "Button 2"))
+                            }
+                            
+//                            Button(action: {
+//                                self.parentViewModel?.apply(.onOpenURL(url: "Button 1"))
+//                            }){
+//                                Text(cardActions.first?.text ?? "")
+//                                    .foregroundColor(Color(hex: cardActions.first?.textColor ?? "#000000"))
+//                            }.frame(width: 128, height: 42, alignment: .center)
+//                                .background(Color(hex: cardActions.last?.bgColor ?? "#FFFFFF").cornerRadius(4))
+//                            
+//                            Button(action: {
+//                                self.parentViewModel?.apply(.onOpenURL(url: "Button 2"))
+//                            }){
+//                                Text(cardActions.last?.text ?? "")
+//                                    .foregroundColor(Color(hex: cardActions.last?.textColor ?? "#000000"))
+//                            }.frame(width: 128, height: 42, alignment: .center)
+//                                .background(Color(hex: cardActions.last?.bgColor ?? "#FFFFFF").cornerRadius(4))
                             
                         }
                     }.padding(.top, 10)

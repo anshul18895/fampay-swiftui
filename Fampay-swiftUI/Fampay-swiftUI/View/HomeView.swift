@@ -16,7 +16,6 @@ struct HomeView: View {
     @ObservedObject var viewModel: HomeViewModel
     var body: some View{
         VStack{
-            
             ZStack{
                 FPImage.titleLogo.image().resizable()
                     .scaledToFill()
@@ -44,7 +43,7 @@ struct HomeView: View {
         case .HC3: return AnyView(HC3View(cardElement: cardElement,openURL: self.viewModel.openURL))
         case .HC6: return AnyView(HC6View(cardElement: cardElement,openURL: self.viewModel.openURL))
         case .HC5: return AnyView(HC5View(cardElement: cardElement,openURL: self.viewModel.openURL))
-        case .HC4: return AnyView(HC4View(cardElement: cardElement,openURL: self.viewModel.openURL))
+        case .HC4: return AnyView(HC4View(cardElement: cardElement,openURL: self.viewModel.openURL,parentViewModel: self.viewModel))
         case .HC1: return AnyView(HC1View(cardElement: cardElement,openURL: self.viewModel.openURL))
         }
     }
